@@ -20,7 +20,7 @@ function performLogout(cy, contentToConfirm){
     cy.get(logoutButton).click()
     cy.contains(contentToConfirm)
 }
-function navigateToRoomPage(cy, contentToConfirm){
+function navigateToRoomsPage(cy, contentToConfirm){
     cy.get(ViewRoomButton).click()
     cy.contains(contentToConfirm)
 }
@@ -42,7 +42,7 @@ module.exports = {
     checkTitleOfDashboardPage,
     performLogout,
     checkLoggedInUser,
-    navigateToRoomPage,
+    navigateToRoomsPage,
     navigateToClientsPage,
     navigateToBillsPage,
     navigateToReservationsPage

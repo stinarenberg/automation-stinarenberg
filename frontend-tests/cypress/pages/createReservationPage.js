@@ -11,7 +11,7 @@ const saveReservationButton='.blue'
 function createNewReservation(cy, startDate, Enddate, client, room, bill, contentToConfirm){
     cy.get(startDateInputField).type(startDate)
     cy.get(EndDateInputField).type(Enddate)
-    cy.get(selectClient).select (client)
+    cy.get(selectClient).select(client)
     cy.get(selectRoom).select(room)
     cy.get(selectBill).select(bill)
     cy.get(saveReservationButton).click()

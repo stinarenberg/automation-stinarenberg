@@ -1,16 +1,16 @@
 /// <reference types="cypress" />
 //Elements
-const selectBill=':nth-child(7) > select'
+const paidCheckbox='.checkbox'
 const saveEditButton='.blue'
 
 //Functions
-function editReservation(cy, bill, contentToConfirm){
-    cy.get(selectBill).select(bill)
+function editBillToPaid(cy, contentToConfirm){
+    cy.get(paidCheckbox).click()
     cy.get(saveEditButton).click()
     cy.contains(contentToConfirm)
 }
 
 //Exports
 module.exports ={
-    editReservation
+    editBillToPaid
 }
